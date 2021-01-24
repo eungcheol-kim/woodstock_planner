@@ -1,0 +1,161 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.todo,
+.name-form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+body {
+  max-width: 600px;
+  margin: 50px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e3d5b8;
+  font-family: "Anton";
+}
+
+.wrap {
+  width: 100%;
+  background-color: white;
+  padding: 0 30px;
+}
+
+.left-bar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 70px;
+  height: 130vh;
+  background-color: #f7b401;
+}
+
+.top-left {
+  position: absolute;
+  top: 5px;
+  left: 75px;
+  font-size: 30px;
+  color: #2d696c;
+}
+
+.top-right {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: #d04023;
+}
+
+header {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h2 {
+  font-size: 45px;
+}
+header span {
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.user-info .name-form input {
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  outline: none;
+  font-size: 20px;
+  text-align: center;
+}
+.user-info .greetings {
+  font-size: 23px;
+}
+
+.todo .todo-form input {
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.todo .list {
+  margin-top: 50px;
+}
+.todo .list .btn-util {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+.todo .list .btn-util button {
+  cursor: pointer;
+  padding: 5px 15px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 16px;
+  color: #f7b401;
+}
+.todo .list .btn-util button:first-child {
+  margin-right: 10px;
+}
+.todo .list .btn-util .active {
+  background-color: #f7b401;
+  color: white;
+}
+.todo .list ul {
+  display: none;
+}
+.todo .list ul li {
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 9fr 0.5fr 0.5fr;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 10px;
+  border-bottom: 1px solid black;
+}
+.todo .list ul li button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.todo .list .visible {
+  display: block;
+}
+
+.weather {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.bgImg {
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+}
+.bgImg img {
+  width: 100%;
+  height: 100%;
+}
